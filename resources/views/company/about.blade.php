@@ -26,10 +26,10 @@
             </div>
 
             <div class="content-grid reveal">
-                <div class="image-wrapper reveal--left">
+                <div class="image-wrapper">
                     <img src="{{ asset('images/expertise1.jpg') }}" alt="Engineering Excellence">
                 </div>
-                <div class="text-block reveal--right">
+                <div class="text-block">
                     <h3>Technical Excellence</h3>
                     <p>With over two decades of experience, we bring a deep understanding of fluid dynamics, separation systems, and asset lifecycle management to every project. Our engineers are dedicated to solving the most challenging technical problems with data-driven insights.</p>
                     <h3>Global Operations</h3>
