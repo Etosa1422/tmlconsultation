@@ -1,0 +1,134 @@
+/* ── MARKETS PAGES CSS ── */
+
+.markets-hero {
+    height: 500px;
+    background-color: var(--tml-navy);
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.markets-hero__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    filter: brightness(0.7);
+}
+
+.markets-hero__inner {
+    position: relative;
+    z-index: 10;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+.markets-hero__eyebrow {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--tml-gold);
+    margin-bottom: 1.25rem;
+}
+
+.markets-hero__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 850;
+    max-width: 800px;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+/* Market Overview */
+.market-overview {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+.market-overview__content h2 {
+    font-size: 2.25rem;
+    color: var(--tml-navy);
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.market-overview__content p {
+    font-size: 1.125rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.market-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.market-stat-card {
+    background: var(--tml-light);
+    padding: 2rem;
+    border-left: 4px solid var(--tml-gold);
+}
+
+.market-stat-card__val {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--tml-navy);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.market-stat-card__label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Capability Grid */
+.capability-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.capability-card {
+    border: 1px solid #eee;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.capability-card:hover {
+    border-color: var(--tml-gold);
+    background: #fff;
+    box-shadow: 0 15px 40px rgba(11,37,69,0.06);
+}
+
+.capability-card h3 {
+    font-size: 1.25rem;
+    color: var(--tml-navy);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.capability-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .market-overview {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}

@@ -1,0 +1,390 @@
+/* ── COMPANY PAGES CSS ── */
+
+.subpage-hero {
+    height: 480px;
+    background-color: var(--tml-navy);
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.subpage-hero__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    filter: brightness(0.6);
+}
+
+.subpage-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--tml-navy) 0%, transparent 60%);
+}
+
+.subpage-hero__inner {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.subpage-hero__eyebrow {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--tml-gold);
+    margin-bottom: 1.5rem;
+}
+
+.subpage-hero__title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    font-weight: 800;
+    max-width: 800px;
+}
+
+/* Section Common */
+.section-padding {
+    padding: 6rem 0;
+}
+
+.section-intro {
+    max-width: 800px;
+    margin-bottom: 4rem;
+}
+
+.section-intro__title {
+    font-size: 2.25rem;
+    color: var(--tml-navy);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.section-intro__desc {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Grid layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.content-grid--reverse {
+    direction: rtl;
+}
+
+.content-grid--reverse > * {
+    direction: ltr;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(11,37,69,0.15);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-block h3 {
+    font-size: 1.5rem;
+    color: var(--tml-navy);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.text-block p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Value Cards */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.value-card {
+    background: #fff;
+    padding: 2.5rem;
+    border: 1px solid #f0f0f0;
+    border-top: 4px solid var(--tml-gold);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.value-card__icon {
+    width: 48px;
+    height: 48px;
+    background: var(--tml-light);
+    color: var(--tml-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.value-card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--tml-navy);
+    margin-bottom: 1rem;
+}
+
+.value-card__desc {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.team-member {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+.team-member__img-box {
+    position: relative;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.team-member__img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team-member:hover .team-member__img-box img {
+    transform: scale(1.05);
+}
+
+.team-member__info {
+    padding: 1.5rem 0;
+}
+
+.team-member__name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--tml-navy);
+    margin-bottom: 0.25rem;
+}
+
+.team-member__role {
+    font-size: 0.875rem;
+    color: var(--tml-gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+/* Offices Section */
+.office-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+
+.office-card:nth-child(even) {
+    direction: rtl;
+}
+
+.office-card:nth-child(even) > * {
+    direction: ltr;
+}
+
+.office-card__map {
+    height: 400px;
+    background: #eee;
+    border-radius: 8px;
+}
+
+.office-card__content h3 {
+    font-size: 1.75rem;
+    color: var(--tml-navy);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.office-card__details {
+    list-style: none;
+}
+
+.office-card__details li {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    color: #555;
+}
+
+.office-card__details svg {
+    width: 20px;
+    flex-shrink: 0;
+    color: var(--tml-gold);
+}
+
+/* Careers / Job Listings */
+.job-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.job-card {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    padding: 2rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    box-shadow: 0 10px 25px rgba(11,37,69,0.08);
+}
+
+.job-card__info h4 {
+    font-size: 1.25rem;
+    color: var(--tml-navy);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.job-card__meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.job-card__meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.job-card__meta-item svg {
+    width: 16px;
+    color: var(--tml-gold);
+}
+
+.btn-apply {
+    background: var(--tml-navy);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-apply:hover {
+    background: var(--tml-gold);
+}
+
+@media (max-width: 992px) {
+    .section-padding { padding: 4rem 0; }
+    .content-grid, .office-card { gap: 3rem; }
+}
+
+@media (max-width: 768px) {
+    .content-grid, .office-card {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .subpage-hero {
+        height: auto;
+        padding: 6rem 0 3rem;
+    }
+    
+    .subpage-hero__title {
+        font-size: 2.25rem;
+    }
+
+    .section-intro__title {
+        font-size: 1.75rem;
+    }
+
+    .job-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .job-card__meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .btn-apply {
+        width: 100%;
+        text-align: center;
+    }
+
+    .office-card__map {
+        height: 250px;
+    }
+
+    .content-grid--reverse, .office-card:nth-child(even) {
+        direction: ltr !important;
+    }
+    
+    .content-grid--reverse > *, .office-card:nth-child(even) > * {
+        direction: ltr !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid { grid-template-columns: 1fr; }
+    .value-card { padding: 1.5rem; }
+    .section-padding { padding: 3rem 0; }
+}
