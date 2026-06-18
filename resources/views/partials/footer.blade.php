@@ -92,7 +92,7 @@
                 <a href="/legal/privacy">Privacy</a>
                 <a href="/legal/cookies">Cookies</a>
                 <a href="/legal/accessibility">Accessibility</a>
-                <a href="{{ route('admin.login') }}" style="opacity:0.4;">Admin Login</a>
+                {{-- <a href="{{ route('admin.login') }}" style="opacity:0.4;">Admin Login</a> --}}
             </div>
 
             <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem; justify-content: center; font-size: 0.7rem; font-weight: 800; color: rgba(255,255,255,0.25); text-transform: uppercase; letter-spacing: 0.2em;">
