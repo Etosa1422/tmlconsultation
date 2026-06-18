@@ -308,7 +308,7 @@
             <div class="ceo-section__content">
                 <p class="ceo-section__eyebrow">Meet our CEO</p>
                 <h2 class="ceo-section__title" id="ceo-title">Tariboladei Egai</h2>
-                <p class="ceo-section__desc">Tariboladei Egai is an accomplished Process Engineer with over 20 years of experience optimizing oil and gas facilities. His leadership at TML Consulting International focuses on technical precision and pioneering sustainable separation technologies.</p>
+                <p class="ceo-section__desc">Tariboladei Egai is an accomplished Process Engineer with years of experience optimizing oil and gas facilities. His leadership at TML Consulting International focuses on technical precision and pioneering sustainable separation technologies.</p>
                 
                 <ul class="ceo-section__list">
                     <li>Expertise in offshore Produced-Water Treatment and Separation Systems.</li>
