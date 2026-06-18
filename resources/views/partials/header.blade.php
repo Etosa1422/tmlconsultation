@@ -30,10 +30,10 @@
         {{-- Logo --}}
         <a href="/" class="site-header__logo" aria-label="TML Consulting Group Homepage" style="display:flex;align-items:center;gap:.75rem;text-decoration:none;">
             <img src="{{ asset('logo.png') }}" alt="TML Consulting Group" style="height:44px;width:auto;">
-            <div class="site-header__logo-text">
+            {{-- <div class="site-header__logo-text">
                 <span class="name">TML</span>
                 <span class="sub">Consulting Group</span>
-            </div>
+            </div> --}}
         </a>
 
         {{-- Desktop Nav --}}
